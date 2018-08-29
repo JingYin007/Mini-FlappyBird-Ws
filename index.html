@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MiniFlappyBird</title>
+    <title>Web FlappyBird</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
 
 <canvas id="game_canvas" width="375" height="667"></canvas>
 </body>
 </html>
-<script>
-    var canvas = document.getElementById("game_canvas");
-    console.log(canvas.width+'|'+canvas.height);
-    var context = canvas.getContext('2d');
-    context.fillStyle = 'red';
-    context.fillRect(0, 0, 300, 100);
-
-</script>
+<script type="module" src="game.js"></script>
