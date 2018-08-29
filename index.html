@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MiniFlappyBird</title>
+</head>
+<body>
+
+<canvas id="game_canvas" width="375" height="667"></canvas>
+</body>
+</html>
+<script>
+    var canvas = document.getElementById("game_canvas");
+    console.log(canvas.width+'|'+canvas.height);
+    var context = canvas.getContext('2d');
+    context.fillStyle = 'red';
+    context.fillRect(0, 0, 300, 100);
+
+</script>
